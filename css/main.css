@@ -1,0 +1,175 @@
+/* Start Variables */
+:root{
+    --main-color: hsl(300, 43%, 22%);
+    --secondary-color: hsl(333, 80%, 67%);
+    --container-color: hsl(0, 0%, 100%);
+    --background-color: hsl(300, 24%, 96%);
+    --background-color2: hsl(303, 10%, 53%);
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'League Spartan', sans-serif;
+    background-color: var(--background-color);
+}
+/* End Global Rules */ 
+/* Start Project */
+.project .letter h2{
+    font-size: 300px;
+    font-weight: normal;
+    position: absolute;
+    color: var(--secondary-color);
+    opacity: 0.3;
+    top: -350px;
+    left: 100px;
+}
+.project .container{
+    box-shadow: 15px 0 20px #ddd;
+}
+@media(min-width: 1200px){
+    .project .container{
+        background-color: var(--container-color);
+        padding: 100px 100px;
+        margin: 200px 100px;
+    }
+}
+@media(max-width: 1200px){
+    .project .container{
+        background-color: var(--container-color);
+        padding: 70px 125px;
+        margin: 200px 100px;
+    }
+}
+@media(max-width: 767px){
+    .project .container{
+        padding: 200px 16px;
+        margin: 0;
+        background-color: transparent;
+    }
+}
+.project .container .first-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 100px;
+}
+@media(max-width: 1200px){
+    .project .container .first-part{
+        flex-direction: column;
+    }
+}
+@media(max-width: 767px){
+    .project .container .first-part{
+        text-align: center;
+        align-items: center;
+    }
+}
+.project .container .heading{
+    width: 400px;
+    height: 200px;
+}
+.project .container .heading h2{
+    color: var(--main-color);
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+}
+.project .container .heading p{
+    font-size: 15px;
+    color: #777;
+}
+.project .container .ranks{
+    display: flex;
+    flex-direction: column;
+}
+.project .container .ranks img{
+    width: 17px;
+    height: 17px;
+}
+.project .container .ranks .rank{
+    background-color: var(--background-color);
+    color: var(--main-color);
+    width: 400px;
+    height: 40px;
+    margin-bottom: 15px;
+    padding: 10px 30px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+@media(max-width: 767px){
+    .project .container .ranks .rank{
+        background-color: #eee;
+    }
+}
+.project .container .ranks .rank.one{
+    transform: translateX(0);
+}
+.project .container .ranks .rank.two{
+    transform: translateX(20px);
+}
+.project .container .ranks .rank.three{
+    transform: translateX(40px);
+}
+.project .container .ranks .rank span{
+    margin-left: 20px;
+}
+.project .container .persons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+@media(max-width: 1200px){
+    .project .container .persons{
+        flex-direction: column;
+    }
+}
+.project .container .persons .person{
+    width: 400px;
+    height: 250px;
+    background-color: var(--main-color);
+    color: white;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.project .container .persons .person.one{
+    transform: translateY(-120px);
+}
+.project .container .persons .person.two{
+    transform: translateY(-100px);
+}
+.project .container .persons .person.three{
+    transform: translateY(-80px);
+}
+.project .container .persons .person .img{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.project .container .persons .person img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+.project .container .persons .person p{
+    font-weight: bold;
+}
+.project .container .persons .person span{
+    display: block;
+    margin-top: 5px;
+    font-size: 13px;
+    color: var(--secondary-color);
+}
+.project .container .persons .person q{
+    font-size: 14px;
+    font-weight: normal;
+}
+/* End Project */
